@@ -1,0 +1,39 @@
+# ============================================================
+# Repo Health Checker — .gitignore
+# ============================================================
+
+# Environment & Secret Files
+.env
+.env.*
+*.env
+*.pem
+*.key
+secrets.txt
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node/JavaScript
+node_modules/
+dist/
+build/
+
+# Temporary Files
+tmp/
+temp/
