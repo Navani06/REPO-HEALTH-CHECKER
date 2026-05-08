@@ -1,0 +1,30 @@
+# ============================================================
+# Repo Health Checker — GitHub Actions Workflow
+# ============================================================
+
+name: Repo Health Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  health-check:
+    name: Validate Repository Health
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to check commit messages
+
+      - name: Make Script Executable
+        run: chmod +x check.sh
+
+      - name: Run Health Checks
+        run: ./check.sh
