@@ -1,6 +1,3 @@
-# 🏥 Repo Health Checker
-
-[![Repo Health Check](https://github.com/USERNAME/REPO_NAME/actions/workflows/check.yml/badge.svg)](https://github.com/USERNAME/REPO_NAME/actions/workflows/check.yml)
 
 ## Overview
 
